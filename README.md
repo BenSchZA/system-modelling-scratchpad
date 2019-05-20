@@ -71,3 +71,8 @@ For the first time we have the opportunity to create small markets where we reta
 * https://economics.stackexchange.com/questions/12709/does-control-system-engineering-have-a-place-in-economics
 * https://quant.stackexchange.com/questions/17825/application-of-control-theory-in-quantitative-finance
 
+## Relevant Resources
+
+* cadCAD tutorial GitHub: https://github.com/BlockScience/SimCAD-Tutorials.git
+* Jupyterhub: https://jupyterhub.giveth.io
+
