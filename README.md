@@ -71,6 +71,24 @@ For the first time we have the opportunity to create small markets where we reta
 * https://economics.stackexchange.com/questions/12709/does-control-system-engineering-have-a-place-in-economics
 * https://quant.stackexchange.com/questions/17825/application-of-control-theory-in-quantitative-finance
 
+## Deploying Jupyter Lab with cadCAD (Docker or Nix)
+
+1. `cd jupyter-lab-environment`
+2. `docker-compose up --build`
+
+**OR** if you're in a Unix environment
+
+1. Install Nix: `curl https://nixos.org/nix/install | sh`
+2. Install Cachix: `nix-env -iA cachix -f https://cachix.org/api/v1/install`
+3. `export CACHIX_SIGNING_KEY='4igT/1n2QYaT2doKGL0KzNcXGUPVpZOJcxnqRGCmhxWSnvon5Q2G1mIgWT91+G/B6dpbPck8dx0/QuTCdH6w2A=='`
+4. `cachix use linum-jupyter-lab`
+5. `nix-shell --command "jupyter lab --allow-root --no-browser --ip=0.0.0.0 --port=8888 --LabApp.token=''"`
+
+**THEN**
+
+1. From Notebook run: `source bin/activate`
+2. `pip install -r requirements.txt`
+
 ## Relevant Resources
 
 * cadCAD tutorial GitHub: https://github.com/BlockScience/SimCAD-Tutorials.git

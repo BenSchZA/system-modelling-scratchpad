@@ -9,11 +9,15 @@ RUN nix-env -iA nixpkgs.python
 RUN nix-env -iA nixpkgs.pythonPackages.pip
 RUN nix-env -iA cachix -f https://cachix.org/api/v1/install
 
-COPY . .
+RUN mkdir -p /home/workspace
+RUN mkdir -p /home/build
+WORKDIR /home/build
+
+COPY . ./
 
 #RUN . ./bin/activate
 #RUN pip install -r requirements.txt
 
 EXPOSE 8888
-ENTRYPOINT ["./start.sh"]
+ENTRYPOINT ["/home/build/start.sh"]
 
