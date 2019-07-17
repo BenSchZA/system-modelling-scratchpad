@@ -8,5 +8,5 @@ services:
       cache_from:
         - registry.gitlab.com/linumlabs/molecule-system-modelling/jupyter-lab:latest
     ports:
-      - 8888:80
+      - 8888
 
