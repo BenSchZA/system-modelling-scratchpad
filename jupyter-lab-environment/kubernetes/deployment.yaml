@@ -51,8 +51,8 @@ spec:
         - name: gitlab-registry-molecule
       volumes:
         - name: lab-workspace
-        persistentVolumeClaim:
-          claimName: jupyter-lab-workspace
+          persistentVolumeClaim:
+            claimName: jupyter-lab-workspace
 ---
 # Frontend Service
 apiVersion: v1
@@ -65,8 +65,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 8888
+      targetPort: 8888
       protocol: TCP
   selector:
     app: jupyter-lab

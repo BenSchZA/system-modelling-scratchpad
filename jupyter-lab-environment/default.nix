@@ -9,18 +9,19 @@ let
   iPython = jupyter.kernels.iPythonWith {
     name = "python";
     packages = p: with p; [ 
-      #numpy
-      #pandas 
-      #scikitlearn
-      #sympy
-      #plotly
-      #matplotlib
+      fn
+      numpy
+      pandas 
+      scikitlearn
+      sympy
+      plotly
+      matplotlib
       #line_profiler
       #memory_profiler
-      #psutil
-      #ipywidgets
-      #jupyterlab
-      #networkx
+      psutil
+      ipywidgets
+      jupyterlab
+      networkx
     ];
   };
 
