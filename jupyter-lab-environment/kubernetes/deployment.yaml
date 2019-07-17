@@ -43,7 +43,7 @@ spec:
           image: registry.gitlab.com/linumlabs/molecule-system-modelling/jupter-lab:latest
           imagePullPolicy: Always
           volumeMounts:
-          - mountPath: "/home/workspace"
+          - mountPath: "/home/jupyter/workspace"
             name: lab-workspace
           ports:
           - containerPort: 8888

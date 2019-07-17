@@ -10,5 +10,5 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./workspace:/home/workspace
+      - ./workspace:/home/jupyter/workspace
 
