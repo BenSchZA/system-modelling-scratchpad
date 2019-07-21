@@ -1,2 +1,3 @@
 --index-url https://2bqzAg-2BClz3kzQsqADMkNFsGudmeJWM@repo.fury.io/blockscience/
 cadCAD
+pynverse

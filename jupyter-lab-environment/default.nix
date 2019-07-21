@@ -10,6 +10,7 @@ let
     name = "python";
     packages = p: with p; [ 
       fn
+      funcy
       numpy
       pandas 
       scikitlearn

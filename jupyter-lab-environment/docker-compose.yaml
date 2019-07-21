@@ -1,12 +1,12 @@
 version: '3.5'
 services:
   jupyter-lab:
-    image: registry.gitlab.com/linumlabs/molecule-system-modelling/jupter-lab:latest
+    image: $JUPYTER_LAB_IMAGE
     build:
       context: .
       dockerfile: ./Dockerfile
       cache_from:
-        - registry.gitlab.com/linumlabs/molecule-system-modelling/jupyter-lab:latest
+        - $JUPYTER_LAB_IMAGE
     ports:
       - 8888:8888
     volumes:
