@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README
+README.md
+setup.cfg
+setup.py
+pynverse/__init__.py
+pynverse/inverse.py
+pynverse/utils.py
+pynverse/version.py
+pynverse.egg-info/PKG-INFO
+pynverse.egg-info/SOURCES.txt
+pynverse.egg-info/dependency_links.txt
+pynverse.egg-info/requires.txt
+pynverse.egg-info/top_level.txt

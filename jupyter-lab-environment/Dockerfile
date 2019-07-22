@@ -14,8 +14,7 @@ WORKDIR /home/jupyter
 
 COPY . ./
 
-# RUN . ./bin/activate
-# RUN pip install -r requirements.txt
+RUN ./install-venv.sh
 
 EXPOSE 8888
 ENTRYPOINT ["/home/jupyter/start.sh"]

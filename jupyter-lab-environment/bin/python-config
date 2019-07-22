@@ -1,4 +1,4 @@
-#!/home/bscholtz/Notebooks/notebooks/bin/python
+#!/home/bscholtz/LinumLabs/workspace/molecule-system-modelling/jupyter-lab-environment/bin/python
 
 import sys
 import getopt

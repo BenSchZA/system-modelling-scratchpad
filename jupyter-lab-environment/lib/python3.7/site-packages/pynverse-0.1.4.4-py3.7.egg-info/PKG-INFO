@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pynverse
+Version: 0.1.4.4
+Summary: A library for calculating the numerical inverse of a function
+Home-page: https://github.com/alvarosg/pynverse
+Author: Alvaro Sanchez-Gonzalez
+Author-email: sanchezgnzlz.alvaro@gmail.com
+License: MIT
+Download-URL: https://github.com/alvarosg/pynverse/tarball/0.1.4.4
+Description: UNKNOWN
+Keywords: inverse,function,numerical
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

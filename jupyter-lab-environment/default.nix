@@ -12,6 +12,7 @@ let
       fn
       funcy
       numpy
+      scipy
       pandas 
       scikitlearn
       sympy
