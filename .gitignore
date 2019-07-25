@@ -2,3 +2,8 @@
 .vscode/
 .history/
 .envrc
+bin/
+lib/
+include/
+jupyterlab/
+.ipynb_checkpoints/

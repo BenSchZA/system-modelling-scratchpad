@@ -7,8 +7,9 @@ services:
       dockerfile: ./Dockerfile
       cache_from:
         - $JUPYTER_LAB_IMAGE
+      args:
+        - CADCAD_KEY
     ports:
       - 8888:8888
     volumes:
       - ./workspace:/home/jupyter/workspace
-
