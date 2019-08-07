@@ -1,5 +1,7 @@
 # Custom cadCAD type classes
 ######################################################################################
+from enum import Enum, auto
+import numpy as np
 
 class StateType(Enum):
     @classmethod
@@ -31,19 +33,6 @@ class PoliciesType:
         return returnVal
     
 ######################################################################################
-
-def sell_holdings(investor_node, bonding_curve, value):
-    tokens = max(collateral_to_token_selling(value, bonding_curve['bonded_tokens']), investor_node['bonded_tokens'])
-    value = reward_for_burn(investor_node['bonded_tokens'], bonding_curve['bonded_tokens'], bonding_curve['reserve'])
-    
-    if bonding_curve['bonded_tokens'] >= tokens:
-        bonding_curve['bonded_tokens'] -= tokens
-    if bonding_curve['reserve'] >= value:
-        bonding_curve['reserve'] -= value
-        
-    investor_node['trading_balance'] += value
-    investor_node['invested'] -= value
-    investor_node['bonded_tokens'] -= tokens
     
 # Utility functions
 ######################################################################################
