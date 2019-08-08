@@ -73,24 +73,32 @@ For the first time we have the opportunity to create small markets where we reta
 
 ## Deploying Jupyter Lab with cadCAD (Docker or Nix)
 
+**FIRST** export the following environment variables:
+1. Only if you plan on using a remote Docker registry: `export JUPYTER_LAB_IMAGE=_YOUR_IMAGE_NAME_HERE_`
+2. `export CADCAD_KEY=_YOUR_KEY_HERE_`
+
+**THEN**
+
 1. `cd jupyter-lab-environment`
 2. `docker-compose up --build`
 
 **OR** if you're in a Unix environment
 
-1. Install Nix: `curl https://nixos.org/nix/install | sh`
-2. Install Cachix: `nix-env -iA cachix -f https://cachix.org/api/v1/install`
-3. `export CACHIX_SIGNING_KEY='4igT/1n2QYaT2doKGL0KzNcXGUPVpZOJcxnqRGCmhxWSnvon5Q2G1mIgWT91+G/B6dpbPck8dx0/QuTCdH6w2A=='`
-4. `cachix use linum-jupyter-lab`
+1. `cd jupyter-lab-environment`
+2. Install Nix: `curl https://nixos.org/nix/install | sh`
+3. Install Cachix: `nix-env -iA cachix -f https://cachix.org/api/v1/install`
+4. `cachix use linum-jupyter-lab && cachix use jupyterwith`
+5. `./install-venv.sh`
 5. `nix-shell --command "jupyter lab --allow-root --no-browser --ip=0.0.0.0 --port=8888 --LabApp.token=''"`
 
-**THEN**
+**NB** for both of the above methods, make sure to include the following two lines in your notebook to import the Python dependancies:
 
-1. From Notebook run: `source bin/activate`
-2. `pip install -r requirements.txt`
+```
+import sys
+sys.path.append("../lib/python3.7/site-packages")
+```
 
 ## Relevant Resources
 
 * cadCAD tutorial GitHub: https://github.com/BlockScience/SimCAD-Tutorials.git
 * Jupyterhub: https://jupyterhub.giveth.io
-
