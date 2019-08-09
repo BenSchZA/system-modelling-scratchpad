@@ -89,7 +89,7 @@ For the first time we have the opportunity to create small markets where we reta
 3. Install Cachix: `nix-env -iA cachix -f https://cachix.org/api/v1/install`
 4. `cachix use linum-jupyter-lab && cachix use jupyterwith`
 5. `./install-venv.sh`
-5. `nix-shell --command "jupyter lab --allow-root --no-browser --ip=0.0.0.0 --port=8888 --LabApp.token=''"`
+5. `./start.sh`
 
 **NB** for both of the above methods, make sure to include the following two lines in your notebook to import the Python dependancies:
 
