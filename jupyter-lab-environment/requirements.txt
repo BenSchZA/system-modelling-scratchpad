@@ -1,2 +1,3 @@
-pynverse
-seaborn
+funcy
+pathos
+tabulate

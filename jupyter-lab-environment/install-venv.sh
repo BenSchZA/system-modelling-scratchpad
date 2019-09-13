@@ -9,15 +9,16 @@ set +o nounset
 source bin/activate
 set -o nounset
 
-cat <<EOF > requirements.txt
---index-url https://${CADCAD_KEY}@repo.fury.io/blockscience
-cadCAD
-EOF
-bin/pip3.7 install --no-deps -r requirements.txt
+#cat <<EOF > requirements.txt
+#--index-url https://${CADCAD_KEY}@repo.fury.io/blockscience
+#cadCAD
+#EOF
+#bin/pip3.7 install --no-deps -r requirements.txt
 
 cat <<EOF > requirements.txt
 pynverse
 seaborn
+cadCAD
 EOF
 bin/pip3.7 install --no-deps -r requirements.txt
 
