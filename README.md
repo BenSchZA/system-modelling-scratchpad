@@ -2,11 +2,12 @@
 
 Modelling of the Molecule system architecture using cadCAD, Jupyter notebooks, and other simulation tools.
 
-![Molecule system architecture](https://gitlab.com/linumlabs/molecule-system-modelling/raw/35e07f3b303c9e92bf8dc7fdb62bae3ad4d225c6/media/system-architecture.png)
+![Molecule system architecture](https://gitlab.com/linumlabs/molecule-system-modelling/raw/7a64b01b44ba21d5bc52590dde81d1f089fb366b/media/catalyst-architecture.png)
 
 ## What is cadCAD?
 
-> ‘Complex Adaptive Dynamics Computer Aided design’ is a python based unified modeling framework for stochastic dynamical systems and differential games capable of modeling systems at all levels of abstraction from Agent Based Modeling (ABM) to System Dynamics (SD), and enables smooth integration of computational social science simulations and empirical data science workflows. Software is in private beta, building towards open source launch.
+See https://github.com/BlockScience/cadCAD
+> cadCAD: a differential games based simulation software package for research, validation, and Computer Aided Design of economic systems
 
 ## Objectives
 
