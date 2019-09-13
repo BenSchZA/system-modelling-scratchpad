@@ -2,7 +2,7 @@
 
 Modelling of the Molecule system architecture using cadCAD, Jupyter notebooks, and other simulation tools.
 
-![Molecule system architecture](https://gitlab.com/linumlabs/molecule-system-modelling/raw/35e07f3b303c9e92bf8dc7fdb62bae3ad4d225c6/media/catalyst-architecture.png)
+![Molecule system architecture](https://gitlab.com/linumlabs/molecule-system-modelling/raw/7a64b01b44ba21d5bc52590dde81d1f089fb366b/media/catalyst-architecture.png)
 
 ## What is cadCAD?
 
