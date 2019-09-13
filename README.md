@@ -6,7 +6,8 @@ Modelling of the Molecule system architecture using cadCAD, Jupyter notebooks, a
 
 ## What is cadCAD?
 
-> ‘Complex Adaptive Dynamics Computer Aided design’ is a python based unified modeling framework for stochastic dynamical systems and differential games capable of modeling systems at all levels of abstraction from Agent Based Modeling (ABM) to System Dynamics (SD), and enables smooth integration of computational social science simulations and empirical data science workflows. Software is in private beta, building towards open source launch.
+See https://github.com/BlockScience/cadCAD
+> cadCAD: a differential games based simulation software package for research, validation, and Computer Aided Design of economic systems
 
 ## Objectives
 
