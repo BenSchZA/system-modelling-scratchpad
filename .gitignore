@@ -12,3 +12,4 @@ experiment_*
 __pycache__/
 pickle/
 protea/
+conviction/

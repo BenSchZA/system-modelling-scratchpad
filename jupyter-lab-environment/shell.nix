@@ -1,14 +1,22 @@
 #generate-directory @jupyter-widgets/jupyterlab-manager plotlywidget @jupyterlab/plotly-extension jupyterlab-chart-editor
 
+let channels = rec {
+  requirements = import ./cadcad-nix/requirements.nix {};
+};
+in with channels;
+
 let
   jupyter = import (builtins.fetchGit {
     url = https://github.com/tweag/jupyterWith;
     rev = "";
   }) {};
 
+  deps = builtins.attrValues requirements.packages;
+
   iPython = jupyter.kernels.iPythonWith {
     name = "python";
-    packages = p: with p; [ 
+    packages = p: with p; [
+      deps
       fn
       funcy
       numpy

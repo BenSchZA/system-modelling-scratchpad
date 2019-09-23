@@ -9,6 +9,9 @@ set +o nounset
 source bin/activate
 set -o nounset
 
+# Fix for: "ValueError: ZIP does not support timestamps before 1980"
+export SOURCE_DATE_EPOCH=315532800
+
 #cat <<EOF > requirements.txt
 #--index-url https://${CADCAD_KEY}@repo.fury.io/blockscience
 #cadCAD
@@ -18,11 +21,11 @@ set -o nounset
 cat <<EOF > requirements.txt
 pynverse
 seaborn
-cadCAD
 EOF
 bin/pip3.7 install --no-deps -r requirements.txt
 
 cat <<EOF > requirements.txt
+matplotlib
 funcy
 pathos
 tabulate
