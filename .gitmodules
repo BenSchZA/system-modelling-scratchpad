@@ -1,0 +1,3 @@
+[submodule "jupyter-lab-environment/workspace/ans"]
+	path = jupyter-lab-environment/workspace/ans
+	url = git@github.com:BlockScience/ans.git
