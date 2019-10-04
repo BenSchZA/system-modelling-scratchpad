@@ -1,3 +1,6 @@
 [submodule "jupyter-lab-environment/workspace/ans"]
 	path = jupyter-lab-environment/workspace/ans
 	url = git@github.com:BlockScience/ans.git
+[submodule "jupyter-lab-environment/workspace/uniswap"]
+	path = jupyter-lab-environment/workspace/uniswap
+	url = git@github.com:BlockScience/uniswap.git
