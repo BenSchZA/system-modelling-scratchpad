@@ -17,6 +17,7 @@ let
     name = "python";
     packages = p: with p; [
       deps
+      pygraphviz
       fn
       funcy
       numpy
@@ -32,6 +33,8 @@ let
       ipywidgets
       jupyterlab
       networkx
+      #pytorchWithCuda
+      mpmath
     ];
   };
 

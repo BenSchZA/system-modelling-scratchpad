@@ -8,8 +8,5 @@ include/
 jupyterlab/
 .ipynb_checkpoints/
 derivation_*
-experiment_*
 __pycache__/
 pickle/
-protea/
-conviction/
