@@ -46,7 +46,15 @@ let
   jupyterEnvironment =
     jupyter.jupyterlabWith {
       kernels = [ iPython ];
-      directory = ./jupyterlab;
+      # directory = ./jupyterlab;
+      directory = jupyter.mkDirectoryWith {
+        extensions = [
+          #"@jupyter-widgets/jupyterlab-manager" #"@jupyter-widgets/jupyterlab-manager@0.38"
+          "plotlywidget"
+          "@jupyterlab/plotly-extension"
+          # "jupyterlab-chart-editor"
+        ];
+      };
     };
 in
   jupyterEnvironment.env

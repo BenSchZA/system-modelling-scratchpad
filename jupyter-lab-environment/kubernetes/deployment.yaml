@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
         - name: jupyter-lab
-          image: registry.gitlab.com/linumlabs/molecule-system-modelling/jupter-lab:latest
+          image: registry.gitlab.com/linumlabs/molecule-system-modelling/jupyter-lab:latest
           imagePullPolicy: Always
           volumeMounts:
           - mountPath: "/home/jupyter/workspace"

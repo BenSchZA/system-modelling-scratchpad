@@ -1,7 +1,5 @@
-bin/
-lib/
-include/
 jupyterlab/
 .ipynb_checkpoints/
 kubernetes/
 workspace/
+venv/
