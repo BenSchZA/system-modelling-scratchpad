@@ -4,3 +4,9 @@
 [submodule "jupyter-lab-environment/workspace/uniswap"]
 	path = jupyter-lab-environment/workspace/uniswap
 	url = git@github.com:BlockScience/uniswap.git
+[submodule "jupyter-lab-environment/workspace/cadCAD"]
+	path = jupyter-lab-environment/workspace/cadCAD
+	url = git@github.com:BlockScience/cadCAD.git
+[submodule "jupyter-lab-environment/workspace/ixo-liquidity-mechanism"]
+	path = jupyter-lab-environment/workspace/ixo-liquidity-mechanism
+	url = git@github.com:BenSchZA/ixo-liquidity-mechanism.git
