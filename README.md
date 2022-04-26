@@ -1,4 +1,4 @@
-# System Modelling
+# System Modelling Scratchpad
 
 Modelling of system architecture using cadCAD, Jupyter notebooks, and other simulation tools.
 
